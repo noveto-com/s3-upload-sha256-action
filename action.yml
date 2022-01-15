@@ -1,0 +1,9 @@
+name: "S3 Upload Folder"
+description: "Upload the content of a directory to an AWS S3 bucket and add SHA256 checksum as metadata to each file"
+author: noveto-com
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: folder-plus
+  color: blue
