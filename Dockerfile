@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Upload the content of a directory to an 
 LABEL "com.github.actions.icon"="folder-plus"
 LABEL "com.github.actions.color"="blue"
 
-LABEL version="0.0.1"
+LABEL version="0.0.2"
 LABEL repository="https://github.com/noveto-com/s3-upload-sha256-action"
 LABEL homepage="https://noveto.com/"
 LABEL maintainer="https://github.com/stefanhp"

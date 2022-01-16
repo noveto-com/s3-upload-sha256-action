@@ -36,14 +36,6 @@ ${AWS_REGION}
 text
 EOF
 
-# Original sync code. TODO: remove
-# Sync using our dedicated profile and suppress verbose messages.
-# All other flags are optional via the `args:` directive.
-# sh -c "aws s3 sync ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} \
-#               --profile s3-upload-sha256-action \
-#               --no-progress \
-#               ${ENDPOINT_APPEND} $*"
-
 # Find all files in the SOURCE_DIR, compute SHA 256, upload file and add
 # SHA 256 as metadata
 files=(`find ${SOURCE_DIR:-.} -type f`)
